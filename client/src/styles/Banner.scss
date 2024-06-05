@@ -1,0 +1,10 @@
+// Стили для баннера
+.banner {
+    &__image {
+        width: 100%; 
+        height: 300px; 
+        object-fit: cover; 
+        display: block;
+        margin: 0 auto; 
+    }
+}

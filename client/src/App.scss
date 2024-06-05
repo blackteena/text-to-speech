@@ -1,0 +1,62 @@
+// Стили для тела приложения
+body {
+  margin: 0; // Убираем отступы
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif; 
+  -webkit-font-smoothing: antialiased; 
+  -moz-osx-font-smoothing: grayscale; 
+}
+
+// Стили для эл. кода
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace; // Задаем семейство шрифтов для кода
+}
+
+// Стили для основного компонента
+.App {
+  text-align: center; 
+
+  &-logo {
+    height: 40vmin;
+    pointer-events: none;
+
+    // Анимация
+    @media (prefers-reduced-motion: no-preference) {
+      animation: App-logo-spin infinite 20s linear; 
+    }
+  }
+
+  // Стили для заголовка 
+  &-header {
+    background-color: #282c34; // Цвет фона заголовка
+    min-height: 100vh; // Минимальная высота заголовка
+    display: flex; // Используем Flexbox для выравнивания
+    flex-direction: column; // Располагаем элементы в колонку
+    align-items: center; // Выравниваем элементы по центру по горизонтали
+    justify-content: center; // Выравниваем элементы по центру по вертикали
+    font-size: calc(10px + 2vmin); // Задаем размер шрифта с использованием калькуляции
+    color: white; // Цвет текста
+  }
+
+  // Стили для ссылки 
+  &-link {
+    color: #61dafb; // Цвет ссылки
+  }
+}
+
+// Анимация 
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg); 
+  }
+  to {
+    transform: rotate(360deg); 
+  }
+}
+
+// Стили для контейнера
+.container {
+  color: #fff; 
+  max-width: 1140px; 
+  margin: 0 auto; 
+  padding: 0 15px;
+}

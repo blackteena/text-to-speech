@@ -1,0 +1,14 @@
+// Стили для шапки
+.header {
+    background-color: #333;
+
+    &__inner {
+        display: flex;
+    }
+
+    &__logo {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 10px 0;
+    }
+}

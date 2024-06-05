@@ -1,0 +1,70 @@
+// Стили для главного компонента
+.form {
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+
+    &__section {
+        margin-bottom: 20px;
+    }
+
+    &__speakers {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    
+    &__button {
+        padding: 10px 20px;
+        margin: 5px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: white; 
+        cursor: pointer;
+        transition: background-color 0.3s;
+    
+        &--selected,
+        &:hover {
+            background-color: #0056b3;
+        }
+    }
+    
+
+    &__textarea {
+        width: 100%;
+        height: 100px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        resize: none;
+        font-size: 16px;
+        color: #333;
+    }
+
+    &__submit {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #28a745;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+        &:hover:not(:disabled) {
+            background-color: #218838;
+        }
+    }
+
+    &__audio {
+        margin: 20px 0;
+        width: 100%;
+    }
+}
